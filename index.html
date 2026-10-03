@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>슬기로운 인천 세계시민 탐방</title>
+<meta name="description" content="인천형 세계시민교육 × 읽걷쓰 AI × 금융교육 — 초등학생 탐방 게임. 미션 8개, 넌센스 퀴즈 4개, AI 누리와의 대결 4판, 스크래치 복권!">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚌</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="rotate">📱 휴대폰은 <b>가로</b>로 돌려 주세요!</div>
+
+<div id="stage">
+  <div id="bgwrap"><img id="bgA" alt=""><img id="bgB" alt=""></div>
+  <div id="sky-fx"><i class="cl a"></i><i class="cl b"></i><i class="cl c"></i></div>
+  <div id="actors"></div>
+
+  <div id="caption" class="hidden"><div class="text"><span class="ghost"></span><span class="typed"></span></div><span class="ctc">▼</span></div>
+  <div id="npc" class="hidden"><div class="icon"></div><div class="body"><div class="name"></div><div class="text"><span class="ghost"></span><span class="typed"></span></div></div><span class="ctc">▼</span></div>
+  <div id="bubble" class="hidden"><div class="name"></div><div class="text"><span class="ghost"></span><span class="typed"></span></div><span class="ctc">▼</span><i class="tail"></i></div>
+
+  <div id="hud" class="hidden">
+    <div class="h-me"><div id="hudAvatar"></div><b id="hudName"></b></div>
+    <div class="h-stamps" id="hudStamps"></div>
+    <div id="hudCombo"></div>
+    <div class="spacer"></div>
+    <div class="h-pill">💰 <b id="hudMoney">10,000원</b></div>
+    <div class="h-pill star">⭐ <b id="hudStar">0</b></div>
+    <button class="h-pill btn-pill" id="hudPass">🛂 여권</button>
+    <button class="h-pill btn-pill sound-btn" id="hudSound">🔊</button>
+  </div>
+
+  <div id="overlay"></div>
+  <canvas id="fx" width="1920" height="1080"></canvas>
+  <div id="flash"></div>
+  <div id="toasts"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="chars.js"></script>
+<script src="engine.js"></script>
+<script src="games.js"></script>
+<script src="story.js"></script>
+</body>
+</html>
