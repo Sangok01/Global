@@ -1,19 +1,6 @@
 # 🚌 슬기로운 인천 세계시민 탐방
 
-인천형 세계시민교육(읽걷쓰 4P) × 읽걷쓰 AI × 금융교육을 담은 **초등학생 1인칭 탐방 게임**입니다.
-설치 없이 GitHub Pages 링크로 바로 실행됩니다. (PC·태블릿·휴대폰 가로 화면)
-
-## ▶ GitHub에 올려 바로 실행하기
-
-1. GitHub에서 **New repository** → 이름 예: `seulgi-incheon` → **Public** → Create
-2. **Add file → Upload files** → 압축을 푼 폴더 **안의 내용물 전부**(index.html, style.css, *.js, assets 폴더, .nojekyll)를 끌어다 놓기 → Commit
-   - ⚠️ 저장소 첫 화면에 `index.html`이 바로 보여야 합니다. (폴더째 올리면 README만 보여요)
-3. **Settings → Pages → Build and deployment**
-   - Source: **Deploy from a branch** (GitHub Actions ❌)
-   - Branch: **main** / **(root)** → Save
-4. 1~2분 뒤 접속: `https://아이디.github.io/저장소이름/`
-
-> `.nojekyll`은 숨김 파일이라 업로드 창에서 안 보일 수 있어요. 없어도 대부분 실행되지만, 있으면 더 안전합니다.
+인천형 세계시민교육(읽걷쓰 4P) 기반 금융교육을 위한 **초등학생 1인칭 탐방 게임**입니다.
 
 ## 🎮 게임 구성 (약 10분)
 
@@ -28,13 +15,8 @@
 | 스크래치 복권 | 승리 시 황금 복권, 패배 시 일반 복권 / 신포시장 복권 가게(기댓값 금융교육) |
 | 인증 | 193점 만점, **120점 이상 통과**(통과율 50% 이하 설계), 영역별 점수·선택 기록, 명예의 전당 TOP 5 |
 
-## ⚙️ 난이도 조절
-- `data.js` : `MISSION_TIME`(20), `QUIZ_TIME`(10), `PASS_RATIO`(.62 → 통과 기준)
-- `games.js` : 함정 상자 수, 빙고·슈팅 목표, 사목 AI 실수 확률(`blunder`)
-
-## 🏆 순위 초기화
-인증서 2쪽의 **순위 초기화(선생님용)** 버튼. 순위는 각 기기 브라우저에 저장됩니다(부스 운영용).
-
 ## 📝 출처
 - 등장인물은 모두 가상 인물이며, 캐릭터·배경·음악·효과음은 이 프로젝트를 위해 제작했습니다.
 - 글꼴: Google Fonts Jua, Gowun Dodum (SIL OFL), 인터넷 연결 시 자동 로드
+
+## 제작: 인천산곡초 교사 양승분(2026.10.3.)
